@@ -1,0 +1,630 @@
+/*
+*MODIFICAR EL HEIGHT DEL BODY PARA QUE SE AJUSTE A LA ALTURA DE LA PANTALLA
+*CAMBIAR EL GRID EN 800 PARA 1FR
+*
+*/
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+  background-color: #eaeaea;
+  margin: 0;
+}
+
+/*Contenedor principal */
+.pagina {
+  width: 70%;
+ 
+ 
+ 
+  display: grid;
+  grid-template-columns: 30% 60%;
+   transition: grid-template-columns 0.6s ease;
+}
+.columna derecha {
+margin-top: 0;
+
+}
+
+
+.izquierda {
+  background-color: #d0d0d0;
+  padding: 0;
+  margin: 0;
+
+}
+
+.derecha {
+  background-color: #2d2d2b;
+  padding: 0;
+  margin: 0;
+}
+
+.circlecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*  izquierda */
+.circulo {
+  display: flex;
+  margin-top: 50px;
+
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  align-items: center;
+  justify-content: center;
+
+
+
+  border: 6px solid black;
+ transition: width 0.5s ease, height 0.5s ease, margin-top 0.5s ease;
+
+
+
+}
+
+.circulo img {
+  display: flex;
+
+  width: 130%;
+  height: 130%;
+
+  object-fit: cover;
+
+
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 34px;
+  font-family: Arial, sans-serif;
+  color: #333;
+padding-left: 50px;
+ 
+}
+.personalskills {
+
+  padding-left: 50px;
+
+}
+
+
+/*iconos*/
+.iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+padding-left: 50px;
+
+
+}
+
+.infofila {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  
+  
+}
+
+.infofila img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/**/
+.iconos img {
+  display: grid;
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+.hobbies h2 {
+  font-weight: bold;
+  font-size: 34px;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+.iconoshobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  justify-items: start;
+  margin-top: 0;
+  padding-left: 50px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+
+}
+
+.iconoshobbies img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+
+
+}
+
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.circles {
+  display: flex;
+  gap: 4px;
+  margin-right: 50px;
+
+    transition: gap 0.6s ease;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #555;
+
+}
+
+
+.circles {
+  display: flex;
+  gap: 15px;
+
+
+}
+
+/*derecha*/
+
+.tituloprofesion .Christopher {
+  margin-top: 50px;
+  margin-bottom: 1px;
+  color: #9ac841;
+  font-size: 90px;
+  font-family: Futura Light, sans-serif;
+  margin-left: 20px;
+  transition: font-size 0.5s ease;
+}
+
+.tituloprofesion .Baltimore {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #9ac841;
+  font-size: 80px;
+  font-weight: bolder;
+  margin-left: 20px;
+  transition: font-size 0.5s ease;
+}
+
+.tituloprofesion .Architect {
+  margin-top: 2px;
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 35px;
+  transition: font-size 0.5s ease;
+}
+
+.bannertexto {
+  display: inline-block;
+  background-color: #98c449;
+  color: #2d2d2b;
+  padding: 0px 60px 0px 20px;/ font-family: Arial, sans-serif;
+  font-size: 35px;
+
+
+
+}
+
+.textoaboutme {
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+transition: font-size 0.5s ease;
+}
+
+
+/*lineas laterales de educacion*/
+
+.linea-vertical {
+  position: relative;
+  border-left: 3px solid #98c449;
+  margin-left: 40px;
+  padding-left: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px; 
+  
+}
+
+.punto-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+  margin-bottom: 25px;
+}
+
+.circuloinfo {
+  position: absolute;
+  left: -4px;
+  width: 24px;
+  height: 24px;
+  background-color: #98c449;
+  border-radius: 50%;
+  z-index: 1;
+
+}
+
+.linea-vertical .texto1 {
+  margin-left: 30px;
+  font-family: Arial, sans-serif;
+  color: #dbe1f1;
+}
+
+.linea-vertical .texto2 {
+  margin-left: 30px;
+  font-family: Arial, sans-serif;
+  color: #98c449;
+}
+
+.linea-vertical .texto3 {
+  margin-left: 30px;
+  font-family: Arial, sans-serif;
+  color: #dbe1f1;
+
+  margin-bottom: 15px;
+}
+
+
+
+
+/*
+*/
+
+
+
+
+/** * Animación de círculos*/
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  animation-name: llenarVaciar;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+
+
+
+
+@keyframes llenarVaciar {
+
+  0%,
+  100% {
+    background-color: #2d2d2b;
+  }
+
+  50% {
+    background-color: #98c449;
+  }
+}
+
+
+.circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.circle:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.circle:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.circle:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.circle:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.circuloinfo .texto3 {
+  padding-bottom: 15px;
+}
+
+/*RESPONSIVIDAD*/
+/*-----------------------------------------*/
+@media (min-width: 1431px) and (max-width: 1650px) {
+   
+    .circles {
+        gap: 8px;
+    }
+.textoaboutme {
+    
+    margin-right: 10px;
+  }
+  .izquierda {
+ padding-right:5px ;
+padding-left: 5px;
+    }
+
+
+
+
+}
+/*-------------------------------------*/
+
+@media (max-width: 1430px) {
+
+    .pagina {
+  font-size: 75%;
+} 
+
+  .circulo {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .circulo img {
+    width: 130%;
+    height: 130%;
+  }
+ .circles {
+        gap: 6px;
+        
+    }
+
+    .personalskills {
+
+  gap: 3px;
+
+}
+
+.tituloprofesion .Christopher {
+  margin-top: 140px;
+  margin-bottom: 1px;
+  color: #9ac841;
+  font-size: 70px;
+  font-family: Futura Light, sans-serif;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Baltimore {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #9ac841;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Architect {
+  margin-top: 2px;
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.textoaboutme {
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 17px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+
+}
+.circles {
+  display: flex;
+ 
+  margin-right: 15px;
+}
+.izquierda{
+padding-right:5px ;
+padding-left: 5px;
+}
+
+  .infofila {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  padding-right: 15px;
+
+}
+
+
+
+}
+/*------------------------------*/
+
+
+@media (max-width: 1219px) {
+  .iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 50px;
+
+
+  }
+
+.circles {
+  display: flex;
+ 
+  margin-right: 20px;
+}
+
+  .pagina {
+    width: 70%;
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .circulo {
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  .circulo img {
+    width: 130%;
+    height: 130%;
+  }
+ .pagina {
+  width: 70%;
+ 
+ 
+ 
+  display: grid;
+  grid-template-columns: 40% 60%;
+ 
+.tituloprofesion .Christopher {
+  margin-top: 140px;
+  margin-bottom: 1px;
+  color: #9ac841;
+  font-size: 50px;
+  font-family: Futura Light, sans-serif;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Baltimore {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #9ac841;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Architect {
+  margin-top: 2px;
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+ }
+
+
+
+
+}
+/*--------------------------------*/
+
+
+ @media (max-width: 923px) {
+ .pagina {
+  width: 70%;
+  
+ 
+ 
+  display: grid;
+  grid-template-columns: 50% 50%;
+ 
+ }
+.circles {
+  
+  gap: 4px;
+ 
+
+} 
+.tituloprofesion .Christopher {
+  /* margin-top: 140px; */
+  margin-bottom: 1px;
+  color: #9ac841;
+  font-size: px;
+  font-family: Futura Light, sans-serif;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Baltimore {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #9ac841;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.tituloprofesion .Architect {
+  margin-top: 2px;
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.textoaboutme {
+  color: #dbe1f1;
+  margin-left: 20px;
+  font-size: 13px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+
+}
+
+
+
+
+
+
+
+
+ }
